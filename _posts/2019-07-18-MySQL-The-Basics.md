@@ -1,3 +1,11 @@
+---
+layout: post
+title: MySQL Basic Commands
+subtitle: Simple syntax of MySQL
+tags: [MySQL]
+---
+
+
 I am really bad with memorization, so this blog post will serve as a reference to the basic MySQL syntax I use in the class. 
 
 To install MySQL in Ubuntu, follow [this](http://parimal.codes/Installing-LAMP-stack-on-Ubuntu-18.04-LTS/) guide.

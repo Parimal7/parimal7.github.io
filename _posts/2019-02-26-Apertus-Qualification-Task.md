@@ -1,3 +1,12 @@
+---
+layout: post
+title: Apertus Qualification Task
+subtitle: Tackling the problem statements for proposal submission in Apertus.
+tags: [gsoc]
+---
+
+
+
 Google Summer of Code proposal submissions start 25th March, and for this year I decided to try for Apertus Organisation. Read on to know my journey from solving the challenge task to submitting the final proposal.
 
 This choice is basically because of two reasons - 

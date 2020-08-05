@@ -1,3 +1,12 @@
+---
+layout: post
+title: GSOC Preparation Final Post
+subtitle: Everything I did for preparing my 2019 GSOC Proposal
+tags: [gsoc]
+---
+
+
+
 A summary of everything I did for preparing my GSOC Proposal 2019.
 
 After 3 months of hard work and a great learning experience later, time to write down everything I learnt during this period of time. I would like to thank the mentors of Apertus org for pointing me in the right direction and for providing me the adequate resources for a clearing my doubts. Result whether I get selected will be announced on May 6, but my chances are slim since the feedback for my proposal got really delayed, like 1 hour before the submission deadline delayed, and he said it should have had more technical details. Oh well, I gave my best and I guess I am satisfied with my hard work since I cannot afford to give it more time given my FAT exams are approaching.

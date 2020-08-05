@@ -1,3 +1,12 @@
+---
+layout: post
+title: Vimtutor Chapter Summaries
+subtitle: A summary of all the tutorials in the vimtutor
+tags: [vim]
+---
+
+
+
 So I decided to finally learn all the basic commands of Vim, and some research showed that completing the in built vim tutor is the best way. It takes roughly 30 minutes, and I recommend everyone who wishes to learn Vim to follow the Vimtutor everyday for 30 days.
 
 In this post I will just yank and paste the summaries from the Vimtutor for  future reference.

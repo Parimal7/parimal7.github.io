@@ -1,3 +1,12 @@
+---
+layout: post
+title: Why my GSOC proposal got rejected
+subtitle: Reflecting upon my mistakes while preparing for GSOC 2019
+tags: [gsoc]
+---
+
+
+
 So the GSOC results were announced on May 6, 2019 and I got what I expected, a rejected proposal. In this post I will try to outline the major points on why I didn’t make the cut.
 
 ### I wasn’t enjoying it – ###

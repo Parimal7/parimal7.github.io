@@ -1,3 +1,12 @@
+---
+layout: post
+title: Apertus Qualification Task : Part 2
+subtitle: Part 2 of the qualification task solution for GSOC 2019
+tags: [gsoc]
+---
+
+
+
 This post is a follow up of my last post on the qualification task. 
 
 So, after the reviews I received for my first challenge submission, I decided to do the following tasks –

@@ -1,3 +1,11 @@
+---
+layout: post
+title: Installing LAMP stack on Ubuntu 18.04 LTS
+subtitle: A tutorial on how to install the linux-apache-mysql-php stack for web development.
+tags: [web-dev]
+---
+
+
 This guide will cover how to install a LAMP ( Linux, Apache, MySQL, PHP ) stack on your Ubuntu machines. 
 
 Most of this guide is taken from the following two tutorials –

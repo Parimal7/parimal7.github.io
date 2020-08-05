@@ -1,6 +1,9 @@
 ---
+layout: post
+title: Leetcode Worh Search 
+subtitle: Solving the classic problem
+tags: [algorithms]
 ---
-
 
 In this post I will explain the [Word Search](https://leetcode.com/problems/word-search/) problem from Leetcode. 
 
