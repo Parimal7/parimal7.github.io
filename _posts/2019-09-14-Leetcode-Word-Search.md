@@ -1,3 +1,7 @@
+---
+---
+
+
 In this post I will explain the [Word Search](https://leetcode.com/problems/word-search/) problem from Leetcode. 
 
 ### Problem statement : ###
