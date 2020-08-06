@@ -183,6 +183,6 @@ int main() {
 }
 ```
 
-![Representation of DFS]({{ site.baseurl }}/images/terminal.png "Representation of DFS")
+![Representation of DFS]({{ site.baseurl }}assets/img/terminal.png "Representation of DFS")
 
 That's it! Hope you liked this post.
