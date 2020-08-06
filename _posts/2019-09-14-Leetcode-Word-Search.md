@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leetcode Worh Search 
+title: Leetcode Word Search 
 subtitle: Solving the classic problem
 tags: [algorithms]
 ---
