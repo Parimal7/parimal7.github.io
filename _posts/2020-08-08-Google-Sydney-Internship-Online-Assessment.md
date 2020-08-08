@@ -1,9 +1,9 @@
-```
+---
 layout: post
 title: Online Assessment for Google Sydney internship role
 subtitle: An overview of how my OA went
 tags: [tech-interivews]
-```
+---
 
 Google India generally opens up applications for their internship roles one year in advance, so to be a Google SWE intern in summer of
 2020, you need to apply from August of 2019.I wasn't really prepared to tackle algorithmic questions of Google level in 2019 so
@@ -21,7 +21,7 @@ The fact that my resume got passed the ATS and was worthy of atleast getting a c
 
 ![email-screenshot]({{ site.baseurl }}/images/google-invite.png "Invitation-to-Google-OA")
 
-The assessment was scheduled on 17th April, 2020 and I had 1 week to prepare for it. I spent all that time practicing on Leetcode.
+The assessment was scheduled on 17th April, 2020 and I had one week to prepare for it. I spent all that time practicing on Leetcode.
 
 The format for OA is you will get two leetcode type questions (ranging from easy to difficult) and 45 minutes of time. I cannot discuss the exact questions
 but both of them were related to trees and were leetcode mediums. I solved both with all test cases passing with 10 minutes to spare, and was sure of atleast getting
