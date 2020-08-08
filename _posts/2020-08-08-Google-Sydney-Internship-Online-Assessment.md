@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Online Assessment for Google Sydney internship role
-subtitle: An overview of how my OA went
+title: Google SWE Internship OA review
+subtitle: My experience with google online assessment test
 tags: [tech-interivews]
 ---
 
