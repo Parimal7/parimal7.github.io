@@ -2,7 +2,7 @@
 layout: post
 title: Google SWE Internship OA review
 subtitle: My experience with google online assessment test
-tags: [tech-interivews]
+tags: [tech-intervews]
 ---
 
 Google India generally opens up applications for their internship roles one year in advance, so to be a Google SWE intern in summer of
