@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Internship Challenge for Terribly Tiny Tales
-subtitle: A blog post on how I tackled the web dev challenge
+subtitle: A blog post on how I am going to solve the challenge tasks for an internship role.
 tags: [web-dev]
 ---
 
@@ -17,4 +17,28 @@ Here are the tasks required -
 - From the backend, return the top N most frequently occurring words in this file (do not use a ready made module for frequency computation)
 - Display the top N words and their frequency of occurrence in the frontend, in a tabular format
 
-I have zero experience in react or nodejs so I think I will first do a quick tutorial about it.
+I have zero experience in react or nodejs so I think I will first do a quick tutorial about it.I will start with this [react tutorial](https://reactjs.org/tutorial/tutorial.html). Looks like they are building a tic-tac-toe game.
+
+## Learning React and NodeJs
+
+So first I gotta setup the local environment using the following command -
+
+```
+npx create-react-app my-app
+```
+
+After this I need to remove all the source files so I can start afresh.
+
+```
+cd my-app
+cd src
+rm -f *
+cd ..
+```
+
+Add the given index.css and index.js files in the src directory which acts as skeleton code for the tic-tac-toe game, and start the server with -
+
+```
+npm start
+```
+
