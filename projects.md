@@ -6,30 +6,30 @@ subtitle: Here you can find the technical projects I make along with their githu
 
 ## Chess Bot
 ### Artificial Intelligence
-![email-screenshot]({{ site.baseurl }}/images/google-invite.png "Invitation-to-Google-OA")
 [Github Link](https://github.com/Parimal7/ChessAI)
+![chess-bot]({{ site.baseurl }}/images/chess.png "chess-bot")
 
 ## Pathfinding Visualization
 ### Graph Search Algorithms
-![email-screenshot]({{ site.baseurl }}/images/google-invite.png "Invitation-to-Google-OA")
 [Github Link](https://github.com/Parimal7/pathfinding-visualizer)
+![pathfinding-visualization]({{ site.baseurl }}/images/astar.png "path-finding")
 
 ## RAW to Bitmap Processor
 ### Digital Image Processing
-![email-screenshot]({{ site.baseurl }}/images/google-invite.png "Invitation-to-Google-OA")
 [Github Link](https://github.com/Parimal7/Apertus-T872)
+![raw2bmap]({{ site.baseurl }}/images/best.png "raw to bitmap")
 
 ## Web Server
 ### Computer Networks
-![email-screenshot]({{ site.baseurl }}/images/google-invite.png "Invitation-to-Google-OA")
 [Github Link](https://github.com/Parimal7/Web-Server)
+![web-server]({{ site.baseurl }}/images/server.png "web-server")
 
 ## Mini SQLite Clone
 ### Databases
-![email-screenshot]({{ site.baseurl }}/images/google-invite.png "Invitation-to-Google-OA")
 [Github Link](https://github.com/Parimal7/Database-from-scratch)
+![sqlite-clone]({{ site.baseurl }}/images/db2.png "sqlite-clone")
 
 ## Django Blog
 ### Web Development
-![email-screenshot]({{ site.baseurl }}/images/google-invite.png "Invitation-to-Google-OA")
 [Github Link]()
+![django-blog]({{ site.baseurl }}/images/blog.png "django-blog")
