@@ -14,7 +14,7 @@ Fast forward to Febraury of 2020 and 150 leetcode style questions later, I got t
 
 On 24th Feb, 2020, I applied for the role on Google's Career website.
 
-![email-screenshot]({{ site.baseurl }}/images/google-application-email.png "Google-Application-Email")
+![Email Screenshot]({{ site.baseurl }}/images/google-application-email.png "Email Screenshot")
 
 After I had forgotten about it, on 10th April 2020, to my surprise, I got an email saying I was invited for an online assessment for the SWE Intern role.
 The fact that my resume got passed the ATS and was worthy of atleast getting a chance to give OA made me really happy.
