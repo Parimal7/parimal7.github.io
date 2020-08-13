@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Notes on MERN Stack
-subtitle: MongoDB-Express-React-NodeJs : Notes on a MERN-stack tutorial
+subtitle: Learning the MongoDB-Express-React-NodeJs stack cause why not.
 tags: [web-dev]
 ---
 
