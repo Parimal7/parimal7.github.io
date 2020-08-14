@@ -135,7 +135,7 @@ app.listen(port, () => {
 ```
 
 The uri is an environment variable which we get from MondoDB ATLAS. This goes to a .env file in the backend directory.
-NOTE: replace <password> with the password of DB admin, and make sure to replace the brackets as well. 
+NOTE: Replace '<password>' with the password of DB admin, and make sure to replace the brackets as well. 
 
 ** Setting up MongoDB ATLAS
 
@@ -167,7 +167,7 @@ const userSchema = new Schema({
 	trim: true,
 	minlength: 3
     },
-} {
+}, {
     timestamps: true, 
 });
 
@@ -188,7 +188,7 @@ const exerciseSchema = new Schema({
     description: { type: String, required: true},
     duration: { type: Number, required: true},
     date: { type: Date, required: true},
-} {
+}, {
     timestamps: true, 
 });
 
@@ -203,5 +203,83 @@ Inside the backend folder, create another folder called routes, and create 2 fil
 mkdir routes
 cd routes
 touch exercises.js users.js
+~~~
+
+Before moving on, we need to tell the server to use the files we just created.
+
+Add the following lines into server.js -
+
+```javascript
+const exercisesRouter = require('./routes/exercises');
+const usersRouter = require('./routes/users');
+
+app.use('/exercises', exercisesRouter);
+app.use('/users', usersRouter);
+```
+Next we edit the users.js file for routing -
+
+```javascript
+const router = require('express').Router();
+let User = require('../models/user.model');
+
+router.route('/').get((req, res) => {
+    User.find()
+	.then(users => res.json(users))
+	.catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/add').post((req, res) => {
+    const username = req.body.username;
+
+    const newUser = new User({username});
+
+    newUser.save()
+	.then(() => res.json('User added!'))
+	.catch(err => res.status(400).json('Error: ' + err));
+});
+
+module.exports = router;
+```
+
+Since I have already worked with Django and PHP before, I understand all this code, exactly what they are doing so not gonna write any notes here.
+
+Now time to edit the exercises.js file -
+
+```javascript
+const router = require('express').Router();
+let Exercise = require('../models/exercise.model');
+
+router.route('/').get((req, res) => {
+    Exercise.find()
+	.then(exercises => res.json(exercises))
+	.catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/add').post((req, res) => {
+    const username = req.body.username;
+    const description = req.body.description;
+    const duration = Number(req.body.duration);
+    const date = Date.parse(req.body.date);
+
+    const newExercise = new Exercise({
+	username,
+	description,
+	duration,
+	date
+    });
+    
+    newExercise.save()
+	.then(() => res.json('Exercise added!'))
+	.catch(err => res.status(400).json('Error: ' + err));
+});
+
+module.exports = router;
+```
+## Testing the server API
+
+Download the insomnia API testing app using the following command -
+
+~~~
+sudo snap install insomnia
 ~~~
 
