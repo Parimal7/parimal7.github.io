@@ -28,6 +28,7 @@ Apart from these, the tutorial will also use *Mongoose*, a simple schema-based s
 | Join | $lookup |
 | Foreign | Reference |
 
+
 ## MongoDB setup
 
 MongoDB stores data on disk in BSON format, or binary JSON. We will use MongoDB Atlas which is cloud based, instead of installing and using it locally.
@@ -65,5 +66,36 @@ npm init -y
 Now we install a bunch of dependencies -
 
 ~~~
-npm install express cors mongoose dotnev
+npm install express cors mongoose dotenv
 ~~~
+
+- *cors* stands for cross-origin resource sharing allows AJAX requests to skip the same origin policy and access resources from remote hosts.
+- *dotenv* loads environment variables from a .env file into a process.env file which somehow makes development simpler.
+
+Now we install one last package globally -
+
+~~~
+npm install -g nodemon
+~~~
+
+- *nodemon* automatically restarts the node application when file changes in the directory are detected.
+
+Now we create a new file called server.js in the backend directory, and the tutorial copy-pastes some javascript code.
+
+
+```javascript
+const express = require('express');
+const cors = require('cors');
+
+require('dotenv').config();
+
+const app = express();
+const port = process.env.PORT || 5000;
+
+app.use(cors());
+app.use(express.json());
+
+app.listen(port, () => {
+    console.log('Server is running on port: ${port}');
+});
+```
