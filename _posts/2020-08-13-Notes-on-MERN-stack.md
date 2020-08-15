@@ -339,24 +339,6 @@ Also we need bootstrap CSS to make styling for our project easier.
 ~~~
 npm install bootstrap
 ~~~
-Next we need to import the bootstrap's CSS file in App.js.
-
-App.js should look like this -
-
-```javascript
-import React from 'react';
-import "bootstrap/dist/css/bootstrap.min.css";
- 
-function App() {
- return (
-   <div className="container">
-     Hello World
-   </div>
- );
-}
- 
-export default App;
-```
 
 Next we need to setup React Router.
 
@@ -364,8 +346,146 @@ Next we need to setup React Router.
 npm install react-router-dom
 ~~~
 
-Next we add the following line of code in the second line in App.js file -
+So the tutorial has...pasted many lines of code of React...so I will do the same and then understand them.
 
-~~~
-import { BrowserRouter as Router, Route } from “react-router-dom”;
-~~~
+So every component needs a .js file, and all this goes inside the main App.js file.
+
+App.js file will look like this -
+
+
+```javascript
+import React from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import Navbar from "./components/navbar.component"
+import ExercisesList from "./components/exercises-list.component";
+import EditExercise from "./components/edit-exercise.component";
+import CreateExercise from "./components/create-exercise.component";
+import CreateUser from "./components/create-user.component";
+
+function App() {
+  return (
+    <Router>
+      <div className="container">
+        <Navbar />
+        <br/>
+        <Route path="/" exact component={ExercisesList} />
+        <Route path="/edit/:id" component={EditExercise} />
+        <Route path="/create" component={CreateExercise} />
+        <Route path="/user" component={CreateUser} />
+      </div>
+    </Router>
+  );
+}
+
+export default App;
+```
+
+Now we make a new folder inside the /src directory (where App.js exists) and make 5 new .js files for each component. These are -
+
+- navbar.component.js
+- exercises-list.component.js
+- edit-exercise.component.js
+- create-exercise.component.js
+- create-user.component.js
+
+Code for each file -
+
+navbar.component.js -
+
+```javascript
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
+export default class Navbar extends Component {
+
+  render() {
+    return (
+      <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
+        <Link to="/" className="navbar-brand">ExcerTracker</Link>
+        <div className="collpase navbar-collapse">
+        <ul className="navbar-nav mr-auto">
+          <li className="navbar-item">
+          <Link to="/" className="nav-link">Exercises</Link>
+          </li>
+          <li className="navbar-item">
+          <Link to="/create" className="nav-link">Create Exercise Log</Link>
+          </li>
+          <li className="navbar-item">
+          <Link to="/user" className="nav-link">Create User</Link>
+          </li>
+        </ul>
+        </div>
+      </nav>
+    );
+  }
+}
+```
+
+For testing the site now, we will add some stub code to other components -
+
+exercises-list.component.js:
+
+```javascript
+import React, { Component } from 'react';
+
+export default class ExercisesList extends Component {
+  render() {
+    return (
+      <div>
+        <p>You are on the Exercises List component!</p>
+      </div>
+    )
+  }
+}
+```
+
+edit-exercise.component.js:
+
+```javascript
+import React, { Component } from 'react';
+
+export default class EditExercise extends Component {
+  render() {
+    return (
+      <div>
+        <p>You are on the Edit Exercise component!</p>
+      </div>
+    )
+  }
+}
+```
+
+create-exercise.component.js:
+
+```javascript
+import React, { Component } from 'react';
+
+export default class CreateExercise extends Component {
+  render() {
+    return (
+      <div>
+        <p>You are on the Create Exercise component!</p>
+      </div>
+    )
+  }
+}
+```
+
+create-user.component.js:
+
+
+```javascript
+import React, { Component } from 'react';
+
+export default class CreateUser extends Component {
+  render() {
+    return (
+      <div>
+        <p>You are on the Create User component!</p>
+      </div>
+    )
+  }
+}
+```
