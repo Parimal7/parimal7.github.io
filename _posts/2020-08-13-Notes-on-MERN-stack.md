@@ -283,3 +283,89 @@ Download the insomnia API testing app using the following command -
 sudo snap install insomnia
 ~~~
 
+To test if the API is working correctly, just create a new POST or GET request and send the data accordingly. It's working fine till here.
+
+## Adding routes to exercises.js
+
+We need exercises.js to perform more operations than simply adding exercises. Add the following lines to exercises.js -
+
+```javascript
+router.route('/:id').get((req, res) => {
+  Exercise.findById(req.params.id)
+    .then(exercise => res.json(exercise))
+    .catch(err => res.status(400).json('Error: ' + err));
+});
+router.route('/:id').delete((req, res) => {
+  Exercise.findByIdAndDelete(req.params.id)
+    .then(() => res.json('Exercise deleted.'))
+    .catch(err => res.status(400).json('Error: ' + err));
+});
+router.route('/update/:id').post((req, res) => {
+  Exercise.findById(req.params.id)
+    .then(exercise => {
+      exercise.username = req.body.username;
+      exercise.description = req.body.description;
+      exercise.duration = Number(req.body.duration);
+      exercise.date = Date.parse(req.body.date);
+
+      exercise.save()
+        .then(() => res.json('Exercise updated!'))
+        .catch(err => res.status(400).json('Error: ' + err));
+    })
+    .catch(err => res.status(400).json('Error: ' + err));
+});
+```
+
+Running the server after this gives an error saying cannot connect to MongoDB ATLAS. This has to do with me using a different IP address since
+the database grants access to specific IP address which we tell while creating the cluster.
+
+To solve this just go to MongoDB ATLAS site,  in the left side navigation links go to Network Access and add your current IP address.
+
+All the new routes works fine when testing using insomnia. Time to move on to frontend.
+
+## Frontend
+
+React is a Javascript library for building user interfaces. We use components to tell React what we wish to see on the screen.
+When the data changes, react automatically re-render our components.
+
+Starting the development server -
+
+~~~
+npm start
+~~~
+
+Also we need bootstrap CSS to make styling for our project easier.
+
+~~~
+npm install bootstrap
+~~~
+Next we need to import the bootstrap's CSS file in App.js.
+
+App.js should look like this -
+
+```javascript
+import React from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
+ 
+function App() {
+ return (
+   <div className="container">
+     Hello World
+   </div>
+ );
+}
+ 
+export default App;
+```
+
+Next we need to setup React Router.
+
+~~~
+npm install react-router-dom
+~~~
+
+Next we add the following line of code in the second line in App.js file -
+
+~~~
+import { BrowserRouter as Router, Route } from “react-router-dom”;
+~~~
