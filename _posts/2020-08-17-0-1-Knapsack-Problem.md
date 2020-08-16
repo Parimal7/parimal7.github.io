@@ -113,4 +113,27 @@ int solve(int* wt, int* val, int W, int index) {
 This is our final recursive function to solve the 0-1 knapsack problem for small values of N.
 
 In the worst case, our function will call itself twice for every possible stone. This would lead to a time complexity of O(2^N).
-To make this more efficient, we need to add caching.
+To make this more efficient, we need to add caching of results.
+
+We will create an array, called cache, of size N*N, which would store the maximum possible value at every function call.
+This way, some recursive calls which would be repeated won't happen, saving us valuable time.
+
+Let every element in cache[N][N] be -1, which tells us that the current element does not exist in cache.
+If cache[i][j] == -1, we will do the normal recursive call and assign cache[i][j] the value.
+If cache[i][i] != -1, it means it has found the answer earlier and we will just return cache[i][j] instead of again using recursion.
+
+```C++
+int solve(int* wt, int* val, int W, int index) {
+    if(index < 0) return 0;
+    if(cache[index][W] != -1) return cache[index][W];
+    if (W - wt[index] < 0) {
+        return cache[index][W] = solve(wt, val, W, index - 1);
+    }
+    else {
+    	return cache[index][W] = max( val[index] + solve(wt, val, W - wt[index], index-1) , solve(wt, val, W, index-1) );
+    } 
+}
+```
+
+The cache array can be declared globally or passed in as argument of the function. This successfully solved the 0-1 Knapsack Problem using recursive memoization.
+This is also knows as top-down DP, and personally I solve most of the DP problems this way.
