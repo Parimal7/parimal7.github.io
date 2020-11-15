@@ -74,7 +74,7 @@ share-links-active:
 link-tags: true
 
 # Excerpt Word Length - Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 0
+#excerpt_length: 50
 
 # --- Colours / background image --- #
 
