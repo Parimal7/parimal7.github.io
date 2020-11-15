@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Codeforces-Round-#682-Review
-subtitle: Codeforces pupil tries Div2 round
+title: Codeforces-Round-682-Review
+subtitle: Codeforces Pupil tries Div2 round
 tags: [algorithms]
 ---
 
