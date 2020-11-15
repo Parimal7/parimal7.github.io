@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Codeforces-Round-#682-Review.md
+title: Codeforces-Round-#682-Review
 subtitle: Codeforces pupil tries Div2 round
 tags: [algorithms]
 ---
@@ -10,13 +10,6 @@ tags: [algorithms]
 1.  [Problem A](#org522b82a)
 2.  [Problem B](#org58dd4af)
 3.  [Problem C](#org3491810)
-
-&#x2014;
-layout: post
-title: Codeforces-Round-#682-Review.md
-subtitle: Codeforces pupil tries Div2 round
-tags: [algorithms]
-&#x2014;
 
 My rating on Codeforces has always been really low and I would like to change that. My last contest was 9 months ago,
 where I finally reached green! (xD) Starting today, I will be giving more contests and try to write a small review
