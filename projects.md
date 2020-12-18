@@ -31,5 +31,5 @@ subtitle: Here you can find the technical projects I make along with their githu
 
 ## Django Blog
 ### Web Development
-[Github Link]()
+[Website Link](https://parimal-prasoon.herokuapp.com/)
 ![django-blog]({{ site.baseurl }}/images/blog.png "django-blog")
