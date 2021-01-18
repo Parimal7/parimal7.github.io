@@ -4,21 +4,21 @@
 
 # Table of Contents
 
-1.  [Disclaimer](#orgc6ddc13)
-2.  [Introduction](#orgc02c667)
-3.  [Automating the full process](#org939561d)
-    1.  [Function to create the org-file](#org4ca693d)
-    2.  [Function to export and publish the org-file in markdown format](#orgf399f92)
+1.  [Disclaimer](#org3302f9f)
+2.  [Introduction](#orgf45322f)
+3.  [Automating the full process](#orge44ab8f)
+    1.  [Function to create the org-file](#org58282d2)
+    2.  [Function to export and publish the org-file in markdown format](#org43dc512)
 
 
-<a id="orgc6ddc13"></a>
+<a id="org3302f9f"></a>
 
 # Disclaimer
 
 I am still a noob at Emacs so do your research before incorporating my scripts in your config :)
 
 
-<a id="orgc02c667"></a>
+<a id="orgf45322f"></a>
 
 # Introduction
 
@@ -34,7 +34,6 @@ Org-mode has a great markdown exporter, so my workflow went like this -
 4.  Add the YAML front matter to the top of it.
 5.  Move the generated markdown file into the correct directory of my local github pages repo.
 6.  Perform the following git operations -
-    
     i.   git add filename
     
     ii.  git commit -m 'Added filename'
@@ -44,7 +43,7 @@ Org-mode has a great markdown exporter, so my workflow went like this -
 And your blog will be published on the github pages. 
 
 
-<a id="org939561d"></a>
+<a id="orge44ab8f"></a>
 
 # Automating the full process
 
@@ -53,7 +52,7 @@ Press f6, and an org-file will be created with the required format, press f7 and
 to your website. Let's see how the elisp functions look like -
 
 
-<a id="org4ca693d"></a>
+<a id="org58282d2"></a>
 
 ## Function to create the org-file
 
@@ -70,7 +69,7 @@ month and date using the echo command and concatinate it with title and .org ext
 keyboard shortcut of your choice.
 
 
-<a id="orgf399f92"></a>
+<a id="org43dc512"></a>
 
 ## Function to export and publish the org-file in markdown format
 
@@ -97,6 +96,4 @@ credentials since I have (not recommened at all) saved my user/key combination u
 
 The path written as "~/Github/blog/<sub>posts</sub>" should be replaced with the path where your github page posts
 are stored.
-
-Thanks for reading and happy blogging.
 
