@@ -4,21 +4,21 @@
 
 # Table of Contents
 
-1.  [Disclaimer](#org7371457)
-2.  [Introduction](#org46191eb)
-3.  [Automating the full process](#org98c53cc)
-    1.  [Function to create the org-file](#org1b4ca1b)
-    2.  [Function to export and publish the org-file in markdown format](#org3cfcb6d)
+1.  [Disclaimer](#orgc6ddc13)
+2.  [Introduction](#orgc02c667)
+3.  [Automating the full process](#org939561d)
+    1.  [Function to create the org-file](#org4ca693d)
+    2.  [Function to export and publish the org-file in markdown format](#orgf399f92)
 
 
-<a id="org7371457"></a>
+<a id="orgc6ddc13"></a>
 
 # Disclaimer
 
 I am still a noob at Emacs so do your research before incorporating my scripts in your config :)
 
 
-<a id="org46191eb"></a>
+<a id="orgc02c667"></a>
 
 # Introduction
 
@@ -34,14 +34,17 @@ Org-mode has a great markdown exporter, so my workflow went like this -
 4.  Add the YAML front matter to the top of it.
 5.  Move the generated markdown file into the correct directory of my local github pages repo.
 6.  Perform the following git operations -
+    
     i.   git add filename
+    
     ii.  git commit -m 'Added filename'
+    
     iii. git push
 
 And your blog will be published on the github pages. 
 
 
-<a id="org98c53cc"></a>
+<a id="org939561d"></a>
 
 # Automating the full process
 
@@ -50,7 +53,7 @@ Press f6, and an org-file will be created with the required format, press f7 and
 to your website. Let's see how the elisp functions look like -
 
 
-<a id="org1b4ca1b"></a>
+<a id="org4ca693d"></a>
 
 ## Function to create the org-file
 
@@ -67,7 +70,7 @@ month and date using the echo command and concatinate it with title and .org ext
 keyboard shortcut of your choice.
 
 
-<a id="org3cfcb6d"></a>
+<a id="orgf399f92"></a>
 
 ## Function to export and publish the org-file in markdown format
 
