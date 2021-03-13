@@ -1,8 +1,4 @@
 ---
-layout: post
-title: Apertus Qualification Task : Part 2
-subtitle: Part 2 of the qualification task solution for GSOC 2019
-tags: [gsoc]
 ---
 
 
