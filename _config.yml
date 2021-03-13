@@ -168,7 +168,7 @@ timezone: "America/Vancouver"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 7
+paginate: 1000
 
 kramdown:
   input: GFM
