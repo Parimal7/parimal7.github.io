@@ -7,14 +7,14 @@ subtitle: Some of my techncial projects.
 ## [Chess Bot](https://github.com/Parimal7/ChessAI)
 - Built a chess playing bot in JavaScript. Used libraries chess.js for move
 generation and chessboard.js for board visualization.
--  Implemented mini-max algorithm for decision making, searching up to a
+- Implemented mini-max algorithm for decision making, searching up to a
 depth level of three.
-Optimized the algorithm using alpha-beta pruning.
+- Optimized the algorithm using alpha-beta pruning.
 
 ![chess-bot]({{ site.baseurl }}/images/chess.png "chess-bot")
 
 ## [Pathfinding Visualizer](https://github.com/Parimal7/pathfinding-visualizer)
--  Created a desktop application to find shortest path from source to
+- Created a desktop application to find shortest path from source to
 destination in a given map.
 - Implemented Dijktra’s and A* algorithms from scratch for pathfinding
 using C++.
@@ -32,9 +32,9 @@ digital cameras into a bitmap file.
 ![raw2bmap]({{ site.baseurl }}/images/best.png "raw to bitmap")
 
 ## [Web Server](https://github.com/Parimal7/Web-Server)
--  Implemented a simple web server in Python that can handle concurrent
+- Implemented a simple web server in Python that can handle concurrent
 connection requests.
--  Solved the problem of zombie processes by implementing a signal
+- Solved the problem of zombie processes by implementing a signal
 handler and wait system call.
 
 ![web-server]({{ site.baseurl }}/images/server.png "web-server")
