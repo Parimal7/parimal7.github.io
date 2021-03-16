@@ -7,7 +7,7 @@ subtitle: Here you can find the technical projects I make along with their githu
 ## Chess Bot
 ### Artificial Intelligence
 [Github Link](https://github.com/Parimal7/ChessAI)
-![chess-bot]({{ site.baseurl }}/images/chess.png "chess-bot"){:height="600" width="600"}
+![chess-bot]({{ site.baseurl }}/images/chess.png "chess-bot")
 
 ## Pathfinding Visualization
 ### Graph Search Algorithms
