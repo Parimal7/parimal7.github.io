@@ -4,9 +4,9 @@ title: Projects
 subtitle: Here you can find the technical projects I make along with their github links.
 ---
 
-## Chess Bot
+## [Chess Bot](https://github.com/Parimal7/ChessAI)
 ### Artificial Intelligence
-[Github Link](https://github.com/Parimal7/ChessAI)
+
 ![chess-bot]({{ site.baseurl }}/images/chess.png "chess-bot")
 
 ## Pathfinding Visualization
