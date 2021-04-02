@@ -1,0 +1,93 @@
+body {
+	background-image: url('bg.jpg');
+
+}
+
+.my-container {
+  display: flex;	
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+table {
+  font-family: "Poppins", sans-serif;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: #8fb4db;
+  padding: 20px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+h1 {
+	color:#0987d6;
+	font-weight:800;
+	font-size: 45px;
+}
+
+.my-container form {
+  font-family: "Poppins", sans-serif;
+  position: relative;	  
+  padding-bottom: 1rem;
+  background-color: #8fb4db;
+  border-radius: 5px;
+  padding: 20px;
+}
+.my-container form label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  display: block;
+  margin-top: 10px;
+}
+
+.my-container form input {
+  font-family: "Poppins", sans-serif;
+  width: calc(100% - 20px);
+  background-color: #e8f0fe;
+  height: 30px;
+}
+
+.my-container form select{
+	margin-top: 10px;	
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  width: 100%;
+  background-color: #e8f0fe;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 21px;
+  background-color: white;
+}
+
+.my-containter form p {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+textarea {
+	justify-content: left;
+	background-color: #e8f0fe;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" href="./main.css"/>
+</head>
+<body>
+	<div class="my-container">
+		<img src="./logo.png" height="100" width="100" class="topleft">
+		<h1>Hypothetical Portal</h1>		
+	</div>
+	<div class="my-container">
+		<form id="submit_form" action="">
+
+	        <label> Name </label>
+	        <input type="text" id="name" required/>
+
+	        <label> Email </label>
+	        <input type="email" id="email" name="email">
+
+	        <label>Select Technology</label>
+
+			<select name="technology" id="technology">
+			  
+			  
+			</select>
+			<label>Select skill level</label>
+			<input type="range" min="1" max="10" value="5" id="slider">
+			<p>Skill level: <span id="slider-value"></span></p>
+			<button id="add-skill" type="button" onclick="addSkill()">
+	          Add Skill
+	        </button>
+			<label>Selected Skills</label>
+			<textarea id="selected-skills" rows="7" cols="50" readonly>
+			</textarea>
+			<br>
+			<b><p id="error-log"></p></b>
+			<button id="submitNow" onclick="submit">
+	          Submit
+	        </button>
+	     </form>
+  	</div>
+  	<div class="my-container">
+  		<table id="table">
+  			<tr>
+  				<th>User Name</th>
+  				<th>Email Address</th>
+  				<th>Skill Levels</th>
+  				<th>Remove</th>
+  			</tr>
+  		</table>
+  	</div>
+	<script src="./register.js"></script>
+</body>
+</html>
