@@ -78,9 +78,7 @@ Link was recommended by Anonymous founder on a [reddit thread](https://www.reddi
 
 
 
- [https://www.youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J](The Missing Semester : Series of videos on various topics like bash scripting,
-
-vim, git version control and more)
+ [The Missing Semester : Series of videos on various topics like bash scripting, vim, git version control and more](https://www.youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J)
 
 
 
@@ -130,7 +128,7 @@ vim, git version control and more)
 
 
 
- [freeCodeCamp](https://www.youtube.com/channel/
+ [freeCodeCamp](https://www.youtube.com/channel/)
 
  [The Juice Media](https://www.youtube.com/channel/UCKRw8GAAtm27q4R3Q0kst_g)
 
