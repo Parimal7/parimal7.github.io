@@ -47,10 +47,10 @@ handler and wait system call.
 ![sqlite-clone]({{ site.baseurl }}/images/db2.png "sqlite-clone")
 
 ## [Django Blog](https://parimal-prasoon.herokuapp.com/)
-- Created a desktop application to find shortest path from source to
-destination in a given map.
-- Implemented Dijktra’s and A* algorithms from scratch for pathfinding
-using C++.
-- Built the graphical user interface using SFML.
+- Created a portfolio / blog web application from scratch using the Django
+framework.
+- Integrated markdown editorfor bettertext editing and rendering
+through Django admin.
+- Deployed the site on Heroku.
 
 ![django-blog]({{ site.baseurl }}/images/blog.png "django-blog")
